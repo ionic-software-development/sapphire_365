@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomePage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Scripts used in the app -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts/slideshow_script.js"></script>
+    <!-- Script for Slideshow -->
+
+  </head>
+  <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+  </style>
+
+  <body>
+      <!--
+          This divider the image and logo & motto
+      -->
+      <div class="jumbotron">
+        <div class="logo_container">
+          <img src="assets/logo.png" alt="Sapphire Media Logo">
+        </div>
+        <div class="company_name_container">
+          <p>SapphireMedia 360</p>
+        </div>
+        <div class="jumbotron">
+          <p>Innovative & Integrated Media Solutions</p>
+        </div>
+      </div>
+
+      <!--
+          This part represents the navigation dropdown-bar
+      -->
+      <div class="navigation_bar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">The Journer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--
+          This represents the slide navigation
+      -->
+      <div class="slide_show">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/logo.png" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/logo.png" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/logo.png" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+      </div>
+
+      <!--
+          This represents the divider with what makes the company different
+      -->
+      <div class="what_make_us_different">
+        <!-- Text for what makes us different-->
+        <div class="text_makes_us_different">
+          <p>What Makes Us Different?</p>
+        </div>
+        <!-- Slideshow for images about what makes us different-->
+        <div class="slideshow_makes_us_different">
+
+        </div>
+        <!-- Text about factors that make SapphireMedia different -->
+        <div class="factors_makes_us_different">
+          <div class="essential_background">
+            <div class="heading_essential_background">
+                <p>E S S E N T I A L   B A C K G R O U N D </p>
+                <p>  \ EXPERIENCE</p>
+            </div>
+            <div class="paragraph_essential_background">
+              <p>Our smart, passionate and experienced team use an integrated
+                approach to Public Relations to ensure it complements
+                the entire marketing mix, so as to amplify awareness and deliver
+                exponential return.
+              </p>
+            </div>
+          </div>
+
+          <div class="best_practices">
+            <div class="heading_essential_background">
+                <p>B E S T   P R A C T I C E S</p>
+                <p>THINKING</p>
+            </div>
+            <div class="paragraph_essential_background">
+              <p>SapphireMedia 360 has successfully positioned and helped build
+                 brands and reputations for a number of South African companies.
+                This has been the result of our best-practice thinking.
+              </p>
+            </div>
+          </div>
+
+          <div class="high_impact">
+            <div class="heading_essential_background">
+                <p>H I G H   I M P A C T</p>
+                <p>\ STRATEGY</p>
+            </div>
+            <div class="paragraph_essential_background">
+              <p>As an independent agency we continually assess and react to
+                changes within the industry to ensure we’re able to bring new
+                innovations and ideas to our clients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- This below class stores content about who Sapphire are in a shell -->
+      <div class="">
+        <p></p>
+        <p></p>
+        <p></p>
+        <button type="button" name="The Right Way"></button>
+      </div>
+  </body>
+
+</html>
