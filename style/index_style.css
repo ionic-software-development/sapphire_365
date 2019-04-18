@@ -211,7 +211,33 @@ img {vertical-align: middle;}
   width: 25px;
   background-color: #13CE66;
 }
-.about_us{
-  height: 357px;
+.about_us_container{
+    color: white;
+    height: 357px;
+    background-color: #093373;
+    font-family: OpenSans;
+}
+.about_us_paragraph{
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 800px) {
+    .col-md-4 {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+.line{
+  padding-left: 10px;
+  width:374px ;
+  height:6px;
+}
 
+.footer{
+  background-color: #DDE5EE;
 }
