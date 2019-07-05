@@ -8,12 +8,28 @@
     <!-- Stylesheets imports -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index_style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
 
     <!-- Script for Slideshow -->
     <script src="js/slideshow_script.js"></script>
 
     <!-- Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- CSS Grid Stylesheet-->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
   </head>
 
   <body>
@@ -105,71 +121,55 @@
         <div class="text_makes_us_different">
           <p>What Makes Us Different?</p>
         </div>
-
-        <div class="container-fluid">
-          <div class="row vdivide">
-            <div class="col-sm-6">
-              <div style="padding-left: 60px">
-                <img src="assets/different.jpg" class="img_different">
-              </div>
-
-              <div class="dot_group">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <!-- Text about factors that make SapphireMedia different -->
-              <div class="factors_makes_us_different">
-                <div class="essential_background border_bottom">
-                  <div class="heading_essential_background">
-                    <p class="makes_us_diff_two_words">ESSENTIAL BACKGROUND
-                      <span class="makes_us_diff_one_words">  \ EXPERIENCE</span> </p>
-                  </div>
-                  <div class="paragraph_essential_background">
-                    <p class="makes_us_diff_paragraph">Our smart, passionate and experienced team
-                      use an integrated
-                      approach to Public Relations to ensure it complements
-                      the entire marketing mix, so as to amplify awareness and deliver
-                      exponential return.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="best_practices border_bottom">
-                  <div class="heading_essential_background">
-                    <p class="makes_us_diff_two_words">BEST PRACTICES
-                      <span class="makes_us_diff_one_words">  \ THINKING</span></p>
-                  </div>
-
-                  <div class="paragraph_essential_background">
-                    <p class="makes_us_diff_paragraph">SapphireMedia 360 has successfully
-                      positioned and helped build
-                      brands and reputations for a number of South African companies.
-                      This has been the result of our best-practice thinking.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="high_impact">
-                  <div class="heading_essential_background">
-                    <p class="makes_us_diff_two_words">HIGH IMPACT
-                      <span class="makes_us_diff_one_words">  \ STRATEGY</span></p>
-                  </div>
-                  <div class="paragraph_essential_background">
-                    <p class="makes_us_diff_paragraph">As an independent agency we
-                      continually assess and react to
-                      changes within the industry to ensure we’re able to bring new
-                      innovations and ideas to our clients.
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <main>
+          <div class="card">
+            <div class="info">
+              <span>
+                <p>
+                    ESSENTIAL BACKGROUND \ EXPERIENCE
+                </p>
+              </span>
+              <img src="assets/experience.png">
+              <p>
+                  Our passionate and experienced team
+                  use an integrated
+                  approach to Public Relations(PR) to ensure it complements
+                  the marketing mix, to amplify awareness and deliver
+                  exponential return.
+              </p>
             </div>
           </div>
-        </div>
 
+          <div class="card">
+              <div class="info">
+                <span>
+                    <p>BEST PRACTICES  \ THINKING</p>
+                </span>
+                <img src="assets/idea.png">
+                <p>
+                  SapphireMedia 360 has successfully
+                  positioned and helped build
+                  brands and reputations for a number of South African companies.
+                  This has been the result of our best-practice thinking.
+                </p>
+              </div>
+              
+            </div>
+            
+            <div class="card">
+                <div class="info">
+                  <span>
+                    <p>HIGH IMPACT  \ STRATEGY</p>
+                  </span>
+                  <img src="assets/strategy.png">
+                  <p>As an independent agency we
+                      continually assess and react to
+                      changes within the industry in order to ensure we’re able to bring new
+                      innovations and ideas to our clients.
+                    </p>
+                </div>
+              </div>
+            </main>
       </div>
 
       <!-- This below class stores content about who Sapphire are in a shell -->
@@ -196,30 +196,49 @@
           </div>
         </div>
       </div>
-
       <!-- Footer -->
-      <div class="footer">
-        <div class="row" style="height: 119px">
-          <!-- Copyright and company name -->
-          <div class="col-md-4">
-            <img src="assets/copyright.png">
-            <p>2019 Sapphire-Media 360</p>
-          </div>
-          <!-- Logo and company name -->
-          <div class="col-md-4">
-            <img width="98px" height="98px" src="assets/logo.png">
-            <p>Sapphire-Media 360</p>
-          </div>
+      <footer class="page-footer font-small ">
+        <!-- Footer Elements -->
+        <div class="container">
 
-          <!-- Social Media Activity -->
-          <div class="col-md-4">
-            <p>Follow Us On:</p>
-            <a href="#" class="facebook"><i class="fa fa-facebook" style="color: #093373;font-size:50px"></i></a>
-            <i class="fa fa-instagram" style="color: #093373;font-size:50px"></i>
-            <a href="#" class="twitter"><i class="fa fa-twitter" style="color: #093373;font-size:50px"></i></a>
+          <!-- Grid row-->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-12 py-5">
+              <div class="mb-5 flex-center">
+
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+              </div>
+            </div>
+            <!-- Grid column -->
           </div>
+          <!-- Grid row-->
         </div>
-      </div>
-  </body>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="https://mdbootstrap.com/education/bootstrap/"> Sapphire-Media 360</a>
+        </div>
+        <!-- Copyright -->
+
+</footer>  
+</body>
 
 </html>
