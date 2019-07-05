@@ -1,0 +1,44 @@
+body, html {
+  font-family: Verdana, OpenSans;
+  margin: 0;
+}
+
+h1 {
+  margin: 5rem;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  padding: 10px;
+  grid-gap: 10px;
+}
+
+main .card {
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+main .card img {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 40%;
+}
+
+main .card span {
+  text-align: center;
+  font-weight: bold;
+  color: #093373;
+}
+
+.page-footer, .footer-copyright {
+  background-image: -webkit-gradient(linear, left top, right top, from(#093373), to(#2875ee));
+  background-image: linear-gradient(to right, #093373, #2875ee);
+}
+/*# sourceMappingURL=main.css.map */

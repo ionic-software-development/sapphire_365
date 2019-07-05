@@ -1,0 +1,34 @@
+body, html{
+    font-family: Verdana, OpenSans; 
+    margin:0;
+}
+h1{
+    margin: 5rem;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(8rem,1fr));
+    padding: 10px;
+    grid-gap: 10px;
+    .card{
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        img{
+            padding: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            height: 40%;
+        }
+        span{
+            text-align: center;
+            font-weight: bold;
+            color: #093373;
+        }
+    }
+}
+.page-footer,.footer-copyright{
+    background-image: linear-gradient(to right, #093373 , #2875ee);
+}
