@@ -1,9 +1,70 @@
 body, html{
     font-family: Verdana, OpenSans; 
-    margin:0;
+    
+}
+body {
+    font-family: Verdana, sans-serif; 
 }
 h1{
     margin: 5rem;
+}
+carousel{
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                height: 100vh;
+                min-height: 300px;
+                background: no-repeat center center scroll;
+                background-size: cover;
+                -webkit-background-size:cover; 
+            }
+            .carousel-caption{
+                bottom: 270px;
+            }
+            .carousel-caption h5{
+                font-size: 24px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-top: 25px;
+            }
+            .carousel-caption p{
+                margin: auto;
+                font-size: 24px;
+                line-height: 4;
+            }
+        }
+    }
+}
+navbar{
+    .container{
+        .navbar-brand{
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .navbar-brand:hover{
+            color: #fff;
+        }
+        .collapse{
+            .navbar-nav{
+                .nav-item .nav-link{
+                    color: white;
+                }
+                .nav-item .nav-link:hover{
+                    color: white;
+                }
+                .nav-item .nav-link:focus{
+                    color: white;
+                }
+            }
+        }
+    } 
+    .navbar.navbar-light .breadcrumb .nav-item.active>.nav-link, .navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
+        color: white;
+    }
+
 }
 main{
     display: grid;
@@ -29,6 +90,16 @@ main{
         }
     }
 }
+different{
+        .what_make_us_different_box{
+            background-image: linear-gradient(to right, #093373 , #2875ee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+}
+about{
+    .about_us_container{
+        background-image: linear-gradient(to right, #093373 , #2875ee); 
+    }
+}
 .page-footer,.footer-copyright{
-    background-image: linear-gradient(to right, #093373 , #2875ee);
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
 }
